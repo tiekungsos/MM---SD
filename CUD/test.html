@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>ThaiCreate.Com Tutorial</title>
+</head>
+<body>
+<script language="javascript">
+function fncSubmit(strPage)
+{
+if(strPage == "page1")
+{
+document.form1.action="CUD/create_inquiry_doc.php";
+}
+
+if(strPage == "page2")
+{
+document.form1.action="CUD/input_qty.php";
+}
+
+document.form1.submit();
+}
+</script>
+<form action="page.cgi" method="post" name="form1">
+<input name="txtName" type="text" id="txtName">
+<input name="btnButton1" type="button" value="Button" onClick="JavaScript:fncSubmit('page1')">
+<input name="btnButton2" type="button" value="Button" onClick="JavaScript:fncSubmit('page2')">
+</form>
+</body>
+</html>
